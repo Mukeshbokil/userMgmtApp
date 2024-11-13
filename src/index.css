@@ -11,3 +11,153 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for Todo List */
+div {
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Style */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input field for task */
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #5f9ea0;
+}
+
+/* Button Styles */
+button {
+  background-color: #5f9ea0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #4e8e8a;
+}
+
+/* Buttons for filtering task status */
+button:nth-child(2), button:nth-child(3), button:nth-child(4) {
+  background-color: #3498db;
+}
+
+button:nth-child(2):hover, button:nth-child(3):hover, button:nth-child(4):hover {
+  background-color: #2980b9;
+}
+
+/* Todo List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fafafa;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Edit & Delete Buttons */
+button {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:last-child {
+  background-color: #e74c3c;
+}
+
+button:last-child:hover {
+  background-color: #c0392b;
+}
+
+button:first-child {
+  background-color: #f39c12;
+}
+
+button:first-child:hover {
+  background-color: #e67e22;
+}
+
+/* Task Status (Completed / Pending) Labels */
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 500px) {
+  div {
+    width: 90%;
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 20px);
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+}
+
